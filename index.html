@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="full">
 <head>
     <meta charset="utf-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
@@ -11,13 +11,34 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Hind+Guntur">
     <style>
     body{ 
-      background-color: white; 
       margin-top: 60px; 
       margin-bottom: 60px; 
-      font-family: 'Hind Guntur', sans-serif; 
+      font-family: 'Hind Guntur', sans-serif;
+      background-color: transparent;
     } 
     
+    .jumboHeader{
+      text-align: center;
+      padding-top: 30px;
+    }
 
+.full {
+    background: url(https://pixabay.com/static/uploads/photo/2016/07/27/20/03/berries-1546125_960_720.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+    .mainJumbo{
+      background-color: rgba(255,255,255,0.8);
+    }
+    .jumboInfo{
+      text-align: center;
+    }
+    .row{
+     padding-bottom: 50px;
+    }
     </style>
 </head>
 <body>
@@ -46,8 +67,36 @@
              </div> <!-- end of container --> 
            </nav> 
 
-<h1>hello world</h1>
+               
+         <div class="container">
+           <div class="jumbotron mainJumbo">
+             <h1 class="jumboInfo">Changing the food chain for the better</h1>
+           </div>
+         </div>
+         <div class="jumbotron">
+         <div class="container">
+           <div class="row">
+             <div class="col-lg-4">
+               <img class="img-responsive" src="img/rice.jpg">
+             </div>
 
+             <div class="col-lg-8">
+              <h2>Why will the food chain this is just filler text to take upn some space</h2>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="col-lg-4">
+               <img class="img-responsive" src="img/hay.jpg">
+             </div>
+
+             <div class="col-lg-8">
+              <h2>Why will the food chain this is just filler text to take upn some space</h2>
+             </div>
+           </div>
+
+         </div>
+         </div>
     <!-- jQuery --> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <!-- bootstrap --> 
