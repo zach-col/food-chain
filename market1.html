@@ -16,24 +16,34 @@
       margin-bottom: 60px; 
       font-family: 'Hind Guntur', sans-serif; 
     } 
-.navbar-default .navbar-brand {
-    color: black;
-    }
-
-.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #fff;
-    }
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: black;
-    }
-.profileImg{
-  height: 300px;
-  margin-bottom: 20px;
-}
+    
 .navbar-brand>img {
     display: block;
     height: 30px;
+}
+#underline{
+  text-decoration:underline;
+}
+
+.rowHolder{
+  background-color: #e0e0e0;
+  margin-bottom: 25px;
+}
+.img-responsive{
+  height: 183px;
+}
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.foodImage{
+  height: 105px;
+  margin-top: 14px;
+  
 }
     </style>
 </head>
@@ -50,7 +60,8 @@
                 </button> 
               <a class="navbar-brand" href="#">
 	        <img alt="Brand" src="img/logo.png">
-	      </a>
+              </a>
+
               </div> 
               <div id="navbar" class="navbar-collapse collapse"> 
       
@@ -63,60 +74,46 @@
                </ul> 
                </div><!--/.nav-collapse --> 
              </div> <!-- end of container --> 
-           </nav> 
-      <div class="container">
-        <div class="row">
+           </nav>
 
+	   <div class="container">
+             <h1 id="underline">Sellers</h1>
 
+	     <div class="row rowHolder">
+               <div class="col-lg-3 col-md-3 col-sm-4">
+                 <img class="img-responsive" src="img/logo1.png">
+	       </div>
+	       <div class="col-lg-5 col-md-5 col-sm-4">
+                 <h3>Name: Jake walker</h3>
+		 <h3>Company Name: Jakes Farmers Market</h3>
+		 <h3>Product: Strawberries</h3>
+		 <h3>Delivery Date: 24 Hour's</h3>
+	       </div>
 
-          <div class="col-lg-5">
-            <img class="img-responsive profileImg" src="img/man.jpg">
-          </div>
-          <div class="col-lg-3">
-            <h2>Name:Juan marcos</h2>
-            <h2>Company Name: greener goods</h2>
-          </div>
-          <div class="col-lg-4">    
-            <form class="navbar-form">
-              <div class="form-group" style="display:inline;">
-                <div class="input-group">
-                  <input type="text" class="form-control">
-                  <span class="input-group-addon"><a href="market1.html"><span class="glyphicon glyphicon-search"></span></a></span>
-                </div>
-              </div>
-            </form>
-          </div>
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                 <img class="img-responsive foodImage" src="img/uglyFruit.jpg">
+		 <button type="button" class="btn btn-success">Purchase</button>
+               </div>
+	     </div>
 
+             <div class="row rowHolder">
+               <div class="col-lg-3 col-md-3 col-sm-4">
+                 <img class="img-responsive" src="img/logo1.png">
+               </div>
+               <div class="col-lg-5 col-md-5 col-sm-4">
+                 <h3>Name: Jake walker</h3>
+                 <h3>Company Name: Jakes Farmers Market</h3>
+                 <h3>Product: Strawberries</h3>
+                 <h3>Delivery Date: 24 Hour's</h3>
+               </div>
 
-        </div> <!-- end of row -->
+               <div class="col-lg-4 col-md-4 col-sm-4">
+                 <img class="img-responsive foodImage" src="img/uglyFruit.jpg">
+                 <button type="button" class="btn btn-success">Purchase</button>
+               </div>
+             </div>
 
-          <div class="col-lg-6">
-          <h1>Categories</h1>
-	   <div class="btn-group btn-group-justified">
-	     <a href="#" class="btn btn-primary">Fruit</a>
-	     <a href="#" class="btn btn-primary">Dairy</a>
-	     <a href="#" class="btn btn-primary">Meats</a>
-           </div>
-          </div>
-
-
-
-      <div class="col-lg-6">
-        <h1>Delivery Time</h1>
-        <div class="radio">
-          <label><input type="radio" name="optradio">1 - 24 hours</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">2 - 3 Days</label>
-        </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio">4 + days</label>
-        </div>
-      </div>
-
-	
-      </div> <!-- end of container -->
-
+	   </div>
     <!-- jQuery --> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <!-- bootstrap --> 
