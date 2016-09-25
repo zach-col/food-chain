@@ -31,7 +31,10 @@
   height: 300px;
   margin-bottom: 20px;
 }
-
+.navbar-brand>img {
+    display: block;
+    height: 30px;
+}
     </style>
 </head>
 <body>
@@ -45,7 +48,9 @@
                   <span class="icon-bar"></span> 
                   <span class="icon-bar"></span> 
                 </button> 
-                <a class="navbar-brand" href="index.html">Food Matrix</a> 
+              <a class="navbar-brand" href="#">
+	        <img alt="Brand" src="img/logo.png">
+	      </a>
               </div> 
               <div id="navbar" class="navbar-collapse collapse"> 
       
@@ -86,14 +91,17 @@
         </div> <!-- end of row -->
 
         <div class="jumbotron">
-          <h1>hello world</h1>
-            <div class="btn-group btn-group-justified">
-            <a href="#" class="btn btn-primary">Fruit</a>
-            <a href="#" class="btn btn-primary">Veggies</a>
-            <a href="#" class="btn btn-primary">Meats</a>
-            <a href="#" class="btn btn-primary">Dairy</a>
-          </div>
+          <h1>Categories</h1>
+	   <div class="btn-group btn-group-justified">
+	     <a href="#" class="btn btn-primary">Fruit</a>
+	     <a href="#" class="btn btn-primary">Dairy</a>
+	     <a href="#" class="btn btn-primary">Meats</a>
+           </div>
+
         </div>
+
+
+	
       </div> <!-- end of container -->
 
     <!-- jQuery --> 
