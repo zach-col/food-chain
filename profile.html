@@ -21,6 +21,13 @@
     display: block;
     height: 30px;
 }
+
+
+.person{
+  width: 200px;
+  height: 200px;
+
+}
     </style>
 </head>
 <body>
@@ -52,8 +59,55 @@
              </div> <!-- end of container --> 
            </nav> 
 
-<h1>hello world</h1>
+<div class="container">
+        <div class="row">
 
+          <div class="col-lg-5">
+            <img class="img-responsive person" src="img/man.jpg">
+          </div>
+          <div class="col-lg-3">
+            <h2>Name:Juan marcos</h2>
+            <h2>Company Name: greener goods</h2>
+          </div>
+          <div class="col-lg-4">
+  		<!-- Trigger the modal with a button -->
+  		<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Edit Profile</button>
+
+		  <!-- Modal -->
+		  <div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Profile</h4>
+		        </div>
+		        <div class="modal-body">
+			  <form>
+			    <div class="form-group">
+			      <label for="usr">Name:</label>
+			      <input type="text" class="form-control" id="usr">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Password:</label>
+			      <input type="password" class="form-control" id="pwd">
+			    </div>
+			  </form>
+		        </div>
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+      
+		    </div>
+		  </div>
+</div>
+
+
+        </div> <!-- end of row -->
+
+</div>
     <!-- jQuery --> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
     <!-- bootstrap --> 
